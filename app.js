@@ -57,6 +57,11 @@ app.get('/about', (req, res) => {
     });
 });
 
+app.get('/contact', (req, res) => {
+
+    render('contact.hbs', {pageTitle: 'Contact us'});
+});
+
 
 
 
