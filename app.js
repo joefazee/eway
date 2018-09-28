@@ -5,10 +5,11 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const hbs = require('hbs');
 
+const port = process.env.PORT  || 3000;
 
 const data = require('./data');
 const app = express();
-const port = 3001;
+
 
 // set template engine
 hbs.registerPartials(__dirname + '/views/partials');
